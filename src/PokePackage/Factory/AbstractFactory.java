@@ -13,6 +13,8 @@ public abstract class AbstractFactory implements PokeFactory{
         name= aName;
     }
 
+    @Override
+    /** Retorna el atributo name */
     public String getName() {
         return name;
     }
@@ -23,6 +25,8 @@ public abstract class AbstractFactory implements PokeFactory{
         species= aSpecies;
     }
 
+    @Override
+    /** Retorna el atributo species */
     public String getSpecies() {
         return species;
     }
@@ -33,6 +37,8 @@ public abstract class AbstractFactory implements PokeFactory{
         maxHP= aMaxHP;
     }
 
+    @Override
+    /** Retorna el atributo maxHP */
     public int getMaxHP() {
         return maxHP;
     }
@@ -43,6 +49,8 @@ public abstract class AbstractFactory implements PokeFactory{
         maxPP= aMaxPP;
     }
 
+    @Override
+    /** Retorna el atributo maxPP */
     public int getMaxPP() {
         return maxPP;
     }

@@ -9,6 +9,11 @@ public interface PokeFactory {
     void setMaxHP(int aMaxHP);
     void setMaxPP(int aMaxPP);
 
+    String getName();
+    String getSpecies();
+    int getMaxHP();
+    int getMaxPP();
+
     void setFull(String aName, String aSpecies, int aMaxHP, int aMaxPP);
 
     void reset();

@@ -1,7 +1,6 @@
 package PokePackage.Pokemon;
 
 import PokePackage.Items.ItemsInterface;
-import PokePackage.Factory.PokeFactory;
 
 public abstract class AbstractPokemon implements UseItemsInterface {
     private final String name;

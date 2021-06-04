@@ -71,6 +71,7 @@ public class Main {
         Gugul.fullInfo();
 
         C.setName("Kmisa");
+        System.out.println(C.create().getClass());
         WaterType Kmisa= (WaterType) C.create();
         Kmisa.fullInfo();
 

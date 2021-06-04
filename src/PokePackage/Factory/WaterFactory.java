@@ -10,7 +10,7 @@ public class WaterFactory implements PokeFactory{
     private int maxPP= -1;
 
     @Override
-    public AbstractPokemon create() {
+    public WaterType create() {
         return new WaterType(name, species, maxHP, maxPP);
     }
 

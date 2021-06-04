@@ -10,8 +10,8 @@ public class FireFactory implements PokeFactory {
     private int maxPP= -1;
 
     @Override
-    public AbstractPokemon create() {
-        return (FireType) new FireType(name, species, maxHP, maxPP);
+    public FireType create() {
+        return new FireType(name, species, maxHP, maxPP);
     }
 
     @Override

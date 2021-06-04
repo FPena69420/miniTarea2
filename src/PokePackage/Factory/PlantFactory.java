@@ -10,7 +10,7 @@ public class PlantFactory implements PokeFactory {
     private int maxPP= -1;
 
     @Override
-    public AbstractPokemon create() {
+    public PlantType create() {
         return new PlantType(name, species, maxHP, maxPP);
     }
 

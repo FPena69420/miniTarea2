@@ -9,17 +9,19 @@ public class WaterFactory implements PokeFactory{
     private int maxHP= -1;
     private int maxPP= -1;
 
-    @Override
+
     public WaterType create() {
         return new WaterType(name, species, maxHP, maxPP);
     }
 
     @Override
+    /** Define el atributo name */
     public void setName(String aName) {
         this.name= aName;
     }
 
     @Override
+    /** Define el atributo species */
     public void setSpecies(String aSpecies) {
         this.species= aSpecies;
     }
@@ -40,6 +42,14 @@ public class WaterFactory implements PokeFactory{
         species= "";
         maxHP= -1;
         maxPP= -1;
+    }
+
+    @Override
+    public void setFull(String aName, String aSpecies, int aMaxHP, int aMaxPP) {
+        name= aName;
+        species= aSpecies;
+        maxHP= aMaxHP;
+        maxPP= aMaxPP;
     }
 
 }

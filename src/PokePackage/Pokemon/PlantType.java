@@ -1,7 +1,5 @@
 package PokePackage.Pokemon;
 
-import PokePackage.Items.ItemsInterface;
-
 /** Clase PlantType, instancia objetos que representan pokemones de clase planta, capaces de
  pelear contra pokemones de clase agua, planta y fuego. */
 public class PlantType extends AbstractPokemon implements FightInterface {

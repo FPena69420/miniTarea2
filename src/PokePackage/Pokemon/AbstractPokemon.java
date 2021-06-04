@@ -125,9 +125,11 @@ public abstract class AbstractPokemon implements UseItemsInterface {
 
     /** Imprime en pantalla información acerca del objeto de la clase */
     public void fullInfo() {
+        System.out.println("Full Information Request...............................................");
         this.info();
         this.hp();
         this.pp();
+        System.out.println(".......................................................................");
     }
 
     /** Setter del atributo currentHP */

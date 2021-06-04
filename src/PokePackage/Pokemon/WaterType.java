@@ -1,7 +1,5 @@
 package PokePackage.Pokemon;
 
-import PokePackage.Items.ItemsInterface;
-
 /** Clase waterType, instancia objetos que representan pokemones de clase agua, capaces de
  pelear contra pokemones de clase agua, planta y fuego */
 public class WaterType extends AbstractPokemon implements FightInterface {

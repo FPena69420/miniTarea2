@@ -34,24 +34,24 @@ public class Main {
         Chomli.info();
         Paolus.info();
 
-        Creator C= new Creator();
+        WaterFactory WF= new WaterFactory();
+        WF.setMaxHP(100);
+        WF.setName("Kmisa");
+        WF.setSpecies("Butterflop");
+        WF.setMaxPP(21);
+        System.out.println(WF.create().getClass());
+        WaterType Kmisa= WF.create();
+        Kmisa.fullInfo();
 
-        C.setCurrentFactory(new FireFactory());
-        AbstractPokemon Charmooder= C.create();
-        Charmooder.info();
+        FireFactory FF= new FireFactory();
 
-        C.setName("Charmooder2");
-        C.setSpecies("Charmander");
-        C.setMaxHP(125);
-        C.setMaxPP(10);
+        FF.setName("Charmooder3");
+        FF.setSpecies("Charmander");
+        FF.setMaxHP(125);
+        FF.setMaxPP(10);
 
-        AbstractPokemon P2= C.create();
-        P2.info();
-
-        C.setName("Charmooder3");
-        AbstractPokemon P3= C.create();
-        P3.info();
-
+        FireType P3= FF.create();
+        P3.fullInfo();
         P3.sufferHP(100);
         P3.hp();
         P3.use(new Potion());
@@ -61,22 +61,13 @@ public class Main {
         P3.hp();
         P3.pp();
 
-        C.setCurrentFactory(new WaterFactory());
-        C.setMaxHP(100);
-        C.setName("Gugul");
-        C.setSpecies("Butterflop");
-        C.setMaxPP(21);
+        PlantFactory PF= new PlantFactory();
+        PF.setFull("Nugaloog", "Squiddy", 328, 3);
+        PlantType Nugaloog= PF.create();
+        Nugaloog.fullInfo();
 
-        WaterType Gugul= (WaterType) C.create();
-        Gugul.fullInfo();
+        Kmisa.fight(Nugaloog);
 
-        C.setName("Kmisa");
-        System.out.println(C.create().getClass());
-        WaterType Kmisa= (WaterType) C.create();
-        Kmisa.fullInfo();
-
-        Kmisa.fight(Gugul);
-        Gugul.fullInfo();
     }
 
 }

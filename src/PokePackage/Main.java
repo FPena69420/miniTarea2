@@ -66,7 +66,13 @@ public class Main {
         PlantType Nugaloog= PF.create();
         Nugaloog.fullInfo();
 
-        Kmisa.fight(Nugaloog);
+        P3.fight(Nugaloog);
+
+        Nugaloog.sufferPP(2);
+        Nugaloog.pp();
+        Nugaloog.use(new Ether());
+        Nugaloog.pp();
+
 
     }
 
